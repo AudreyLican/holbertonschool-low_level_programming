@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <_putchar.h>
+/*#include <_putchar.h>*/
 #include <unistd.h>
 
 void	_putchar(char c)
@@ -11,15 +11,15 @@ void	_putchar(char c)
 */
 void	print_alphabet(void)
 {
-	char	lowcase;
+	char	lowercase;
 
-	lowcase = 'a';
+	lowercase = 'a';
 	while (lowercase < 'z')
 	{
-		_putchar(lowcase);
-		lowcase++;
+		_putchar(lowercase);
+		lowercase++;
 	}
-	_putchar('\n);
+	_putchar('\n');
 
 	return (0);
 }
