@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - check the code
@@ -7,6 +9,6 @@
  */
 int main(void)
 {
-	printf("%d", print_alphabet);
+	print_alphabet();
     return (0);
 }
