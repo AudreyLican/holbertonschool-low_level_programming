@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 int	_putchar(char c);
 void	print_alphabet(void);
@@ -14,4 +15,11 @@ int	_isalpha(int c);
 
 /*print the sign of a number*/
 int print_sign(int n);
+
+/*
+* Calculation the absolute value of an integer
+* The absolute value of a positive integer is equal to the integer itself
+* On the other and, the absolute value of a negative integer is equal to the opposite of this value.
+*/
+int _abs(int);
 #endif
