@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 * print_alphabet - function print entry point
 *
@@ -13,5 +15,5 @@ void	print_alphabet(void)
 		_putchar(lowercase);
 		lowercase++;
 	}
-	_putchar('\n');;
+	_putchar('\n');
 }

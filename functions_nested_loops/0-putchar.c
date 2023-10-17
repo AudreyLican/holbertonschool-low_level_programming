@@ -1,10 +1,11 @@
 #include "main.h"
 
-/* main - Entry point
- * Descripion : print putchar W/ function putchar
- *
- * Return:  0.
- */
+/**
+* main - Entry point
+* Descripion : print putchar W/ function putchar
+*
+* Return:  0
+*/
 int	main(void)
 {
 	_putchar();
