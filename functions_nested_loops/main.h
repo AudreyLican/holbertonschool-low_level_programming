@@ -22,4 +22,11 @@ int print_sign(int n);
 * On the other and, the absolute value of a negative integer is equal to the opposite of this value.
 */
 int _abs(int);
+
+/*print the last digit of a function*/
+int print_last_digit(int);
+
+/* prints every minute from 00:00 to 23:59 */
+void jack_bauer(void);
+
 #endif
