@@ -21,4 +21,7 @@ void print_numbers(void);
 /* function that prints the numbers, from 0 to 9 whithout chosen digit*/
 void print_most_numbers(void);
 
+/* function that prints 10 times the numbers, from 0 to 14 */
+void more_numbers(void);
+
 #endif
