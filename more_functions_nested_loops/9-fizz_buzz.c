@@ -3,7 +3,7 @@
 /**
 * main - entry point
 * Description : program that prints the numbers from 1 to 100, and
-* print Fizz for multiples of three print Fizz instead of the number 
+* print Fizz for multiples of three print Fizz instead of the number
 * and print Buzz for multiples of 5 print
 * and for number which are multiples of both print FizzBuzz
 *
@@ -13,7 +13,7 @@ int	main(void)
 {
 	int	i;
 
-	for ( i = 1; i <= 100; ++i)
+	for (i = 1; i <= 100; ++i)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
