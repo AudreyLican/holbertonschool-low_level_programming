@@ -2,18 +2,22 @@
 
 /**
 * main - Entry point
+* Description : prints all the numbers of base 16 in lowercase
 *
 * Return: 0
 */
 int	main(void)
 {
-	int num;
+	int	num;
+	char	c;
 
-	num = 0;
-	while(num <= 16)
+	for (num = 0; num < 10; num++)
 	{
-		putchar('%x' + '0');
-		num++;
+		putchar(num + 48);
+	}
+	for (c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
 
