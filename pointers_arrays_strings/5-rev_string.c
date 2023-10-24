@@ -1,28 +1,22 @@
 #include "main.h"
-void swap_int(int *a, int *b);
+
 /**
 * rev_string - function that reverses a string
-* @s : pointer on char
+* @s : pointer on string
 *
 */
 void rev_string(char *s)
 {
 	int	len, i;
+	char	tmp;
 
-	for (len = 0; s[len] != '\0'; len++)
+	for (len = 0; *(s + len) != '\0'; len++)
 
-	i = 0;
-	/*for (i = 0, i < len / 2; i++)*/
-	while (i < len / 2)
+	for (i = 0; i < len / 2; i++)
 	{
-		swap_int(&s[i], &s[len] - 1);
-		/*a = &s[i];
-		b = &s[j];
+		tmp = *(s + i);
+		*(s + i) = *(s + len - i - 1);
+		*(s + len - i - 1) = tmp;
 
-		temp = *a;
-		*a  = *b;
-		*b  = temp;
-		j--;*/
-		i++;
 	}
 }
