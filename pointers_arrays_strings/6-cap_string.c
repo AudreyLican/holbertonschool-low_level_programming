@@ -26,6 +26,13 @@ char *cap_string(char *str)
 
 	while (str[i])
 	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	i = 0;
+	while (str[i])
+	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 			if (!(_alphanum(str[i - 1]) || i == 0))
 				str[i] -= 32;
