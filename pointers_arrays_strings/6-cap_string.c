@@ -20,16 +20,13 @@ int _alphanum(char c)
 char *cap_string(char *str)
 {
 	int i = 0;
-	/*int j = (str[i] >= 'a' && str[i] <= 'z');*/
-	/*int k = (str[i] >= 'A' && str[i] <= 'Z');*/
 
-	while (str[i] != '\0')
+	/*while (str[i] != '\0')
 	{
 		if ((str[i] >= 'A' && str[i] <= 'Z'))
 			str[i] += 32;
 		i++;
-	}
-	i = 0;
+	}*/
 	while (str[i])
 	{
 		if ((str[i] >= 'a' && str[i] <= 'z') && (_alphanum(str[i - 1]) || i == 0))
