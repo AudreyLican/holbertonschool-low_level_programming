@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _alphanum - function to look for other that letters & numbers
+ * _alphanum - function that look for letters and numbers
  * @c : char value
  *
  * Return: 0 if alphanum and 1 false
@@ -24,19 +24,28 @@ char *cap_string(char *str)
 {
 	int i = 0;
 
-/*	while (str[i])
+	while (str[i])
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
 			str[i] += 32;
 		i++;
 	}
-*/
-	while (str[i])
+
+/*	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 			if (!(_alphanum(str[i - 1]) || i == 0))
 				str[i] -= 32;
 		i++;
+	}
+	return (str);
+}
+*/
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (!(_alphanum(str[i - 1]) || i == 0))
+			if ((str[i] >= 'a' && str[i] <= 'z'))
+				str[i] -= 32;
 	}
 	return (str);
 }
