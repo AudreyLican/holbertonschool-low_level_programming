@@ -2,10 +2,10 @@
 
 /**
 * *_strchr - function that locates a character in a string
-* @s : pointer on string
-* @c : char to look for
+* @s : pointer on string to search
+* @c : target character
 *
-* Return: s
+* Return: character find in the string
 */
 
 char *_strchr(char *s, char c)
@@ -16,7 +16,8 @@ char *_strchr(char *s, char c)
 	while (s[i] != '\0' && s[i] != c)
 		i++;
 	if (s[i] == c)
+	{
 		return (&s[i]);
-	else
-	return NULL;
+	}
+	return (NULL);
 }
