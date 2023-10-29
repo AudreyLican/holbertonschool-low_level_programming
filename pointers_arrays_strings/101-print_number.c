@@ -7,14 +7,17 @@
 
 void	print_number(int n)
 {
+	unsigned int	nb;
+
 	if (n < 0)
 	{
 		_putchar('-'); /* treat negative */
 		n = -n; /* convert nb in positive*/
 	}
-	if (n  >= 10)
+	nb = n;
+	if (nb >= 10)
 	{
-		print_number(n / 10); /* print number on the left side */
+		print_number(nb / 10); /* print number on the left side */
 	}
-	_putchar(n % 10 + '0'); /* print the number on the rigth side */
+	_putchar(nb % 10 + '0'); /* print the number on the rigth side */
 }
