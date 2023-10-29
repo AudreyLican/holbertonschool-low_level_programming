@@ -5,19 +5,19 @@
  * @s : pointer on string
  * @b : char that fill the string
  * @n : integer
- * 
- * Return : pointer s
+ *
+ * Return: pointer s
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char	*_memset(char *s, char b, unsigned int n)
 {
-    unsigned int i;
+	unsigned int	count;
 
-    i = 0;
-    while (i < n)
-    {
-        s[i] = b;
-        i++;
-    }
-    return (s);
+	count = 0;
+	while (count < n)
+	{
+		s[count] = b;
+		count++;
+	}
+	return (s);
 }
