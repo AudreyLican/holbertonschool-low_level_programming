@@ -61,6 +61,9 @@ char *leet(char *);
 /* function that encodes a string using rot13. */
 char *rot13(char *);
 
+/* function that prints an integer */
+void print_number(int n);
+
 /* Even more pointers, arrays and strings */
 
 /* function that fills memory with a constant byte */
@@ -73,7 +76,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 
 /* function that gets the length of a prefix substring */
-unsigned int_strspn(char *s, char *accept);
+unsigned int	_strspn(char *s, char *accept);
 
 /* function that searches a string for any of a set of bytes */
 char *_strpbrk(char *s, char *accept);
