@@ -14,9 +14,9 @@
 
 char *leet(char *s)
 {
-	int	scount, leetcount; 
+	int	scount, leetcount;
 	char	letter[] = "aAeEoOtTlL";
-	char	nums[] = "443300711";
+	char	nums[] = "4433007711";
 
 	scount = 0; /* scan throught string */
 	while (s[scount] != '\0') /* check if letter is found */
