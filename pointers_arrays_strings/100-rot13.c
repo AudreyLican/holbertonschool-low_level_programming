@@ -20,9 +20,9 @@ char *rot13(char *s)
 				s[i] -= 13;
 				break;
 			}
-			else
-				s[i] += 13;
-				break;
+
+			s[i] += 13;
+			break;
 		}
 		i++;
 	}
