@@ -10,9 +10,10 @@
 
 char *_strchr(char *s, char c)
 {
-	int	count = 0;;
+	int	count;
 
-	if (*s == '\0')
+	count = 0;
+	if (s[count] == '\0')
 	{
 		return (0);
 	}
