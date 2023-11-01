@@ -28,7 +28,6 @@ int main(int argc, char **argv)
 	{
 		_puts(argv[count]);
 	}
-	_putchar('\n');
 
 	return (0);
 }
