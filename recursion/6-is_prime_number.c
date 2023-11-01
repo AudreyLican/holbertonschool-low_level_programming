@@ -5,12 +5,12 @@
  * @n : integer value given for cheking
  * @x : integer use to check prime
  * Return: 1 true(prime), and 0 false(not prime)
-*/
+ */
 
-int	find_prime(int n, int x)
+int find_prime(int n, int x)
 {
 	if (n % x == 0)
-		return (0); /* if n is divisible by any num other than 1 and itself, it's not prime*/
+		return (0); /*n not prime if divisible by other num than 1 or itself*/
 	if ((x * x) > n)
 		return (1);
 	return (find_prime(n, x + 1));
