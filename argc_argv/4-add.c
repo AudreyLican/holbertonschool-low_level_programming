@@ -18,6 +18,7 @@ int _isdigit(int c)
  * Description : program that adds positive numbers
  * @argc : number of arguments
  * @argv : given arguments
+ * Return: 0  if success and 1 for error
  */
 int main(int argc, char **argv)
 {
