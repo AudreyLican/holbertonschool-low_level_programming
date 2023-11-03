@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s[] = "Hello";
-	char *p;
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-	p = string_toupper(s);
-	printf("%s\n", p);
-	printf("%s\n", s);
-	return (0);
+    t = _strstr(s, f);
+    printf("%s\n", t);
+    return (0);
 }
