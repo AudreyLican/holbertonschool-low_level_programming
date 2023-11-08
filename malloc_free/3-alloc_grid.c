@@ -6,7 +6,7 @@
  * @width : interger of a size
  * @height : integer of a size
  *
- * Return:
+ * Return: double pointer to @D array
  */
 
 int **alloc_grid(int width, int height)

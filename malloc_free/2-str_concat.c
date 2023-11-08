@@ -4,14 +4,14 @@
  * *str_concat - function that concatenates two strings.
  * @s1 : pointer on destination of concat
  * @s2 : pointer on the string to copy
- * 
- * Return: s1
-*/
+ *
+ * Return: pointer to the new allocated space in memory, or NULL for error
+ */
 
 char *str_concat(char *s1, char *s2)
 {
-	int	i, j, size, a;
-	char	*s;
+	int i, j, size, a;
+	char *s;
 
 	if (s1 == NULL)
 		return (NULL);
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (j = 0; s2[j]; j++)
 		;
-	
+
 	size = i + j;
 	s = malloc(size * sizeof(char) + 1);
 
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 		s[a] = s1[a];
 	for (j = 0; a < size; j++, a++)
 		s[a] = s2[j];
-	
+
 	s[a] = '\0';
 	return (s);
 }
