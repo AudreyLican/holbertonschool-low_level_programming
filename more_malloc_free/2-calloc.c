@@ -11,36 +11,19 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *array;
+	int i, l;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	array = malloc(size * nmemb);
+
+	l = size * nmemb;
+	array = malloc(l);
 
 	if (array == NULL)
 		return (NULL);
-	_memset(array, 0, size * nmemb);
+
+	for (i = 0; i < l; i++)
+		array[i] = 0;
 
 	return (array);
-}
-
-/**
- * *_memset - function that fills memory with a constant byte.
- * @s : pointer on string
- * @b : char that fill the string
- * @n : integer
- *
- * Return: pointer s
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int count;
-
-	count = 0;
-	while (count < n)
-	{
-		s[count] = b;
-		count++;
-	}
-	return (s);
 }
