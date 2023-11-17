@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib>
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -52,8 +52,6 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *puppy;
-	int name_len;
-	int owner_len;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
