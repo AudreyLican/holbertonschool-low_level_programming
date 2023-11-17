@@ -32,7 +32,7 @@ void print_all(const char *const format, ...)
 			printf("%s", a);
 			break;
 		}
-		if (format[i] == 'c' || format[i] == 'i' 
+		if (format[i] == 'c' || format[i] == 'i'
 			|| format[i] == 'f' || format[i] == 's')
 			printf(", ");
 	}
