@@ -8,7 +8,8 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int i, sum;
+	unsigned int i;
+	int sum;
 	va_list pa; /* Declaring pointer to the argument list */
 
 	sum = 0;
@@ -22,6 +23,5 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(pa, int);
 	}
 	va_end(pa); /* Ending argument list traversal */
-
 	return (sum);
 }

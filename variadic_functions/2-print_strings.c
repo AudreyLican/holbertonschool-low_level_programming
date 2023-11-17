@@ -18,13 +18,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(pstr, char *);
 		if (!str)
-			printf("%s", "(nil)");
+			printf("(nil)");
 		printf("%s", str);
 
 		if (separator && i < (n - 1))
 			printf("%s", separator);
 	}
 	va_end(pstr);
-
 	printf("\n");
 }
