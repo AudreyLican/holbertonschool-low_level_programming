@@ -10,8 +10,8 @@
  */
 int main(int argc, char **argv)
 {
-	//int num1;
-	//int num2;
+	int num1;
+	int num2;
 	int (*f)(int, int);
 
 	if (argc != 4)
@@ -25,9 +25,9 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	//num1 = atoi(argv[1]);
-	//num2 = atoi(argv[3]);
-	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	printf("%i\n", f(num1, num2));
 
 	return (0);
 }
