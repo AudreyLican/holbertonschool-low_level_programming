@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
-* print_dog - function that prints a struct dog
-* @d : pointer to struct
-*
-*Return: none
-*/
+ * print_dog - function that prints a struct dog
+ * @d : pointer to struct
+ *
+ *Return: none
+ */
 void print_dog(struct dog *d)
 {
 	if (d)
@@ -21,6 +21,7 @@ void print_dog(struct dog *d)
 			printf("Owner: %s\n", d->owner);
 		else
 			printf("Owner: (nil)");
-
 	}
+	else
+		return;
 }
