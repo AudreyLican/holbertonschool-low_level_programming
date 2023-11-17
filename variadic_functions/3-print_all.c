@@ -6,9 +6,9 @@
  */
 void print_all(const char *const format, ...)
 {
+	va_list args;
 	int i;
 	char *a;
-	va_list args;
 
 	va_start(args, format);
 
@@ -19,7 +19,7 @@ void print_all(const char *const format, ...)
 	}
 
 	i = 0;
-	while (format && format[i])
+	while (format[i])
 	{
 		switch (format[i++])
 		{
