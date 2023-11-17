@@ -6,7 +6,7 @@
  */
 void print_all(const char *const format, ...)
 {
-	unsigned int i;
+	int i;
 	char *a, *separator;
 	va_list args;
 
@@ -32,8 +32,8 @@ void print_all(const char *const format, ...)
 			printf("%s", a);
 			break;
 		}
-		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f'
-			|| format[i] == 's')
+		if (format[i] == 'c' || format[i] == 'i' 
+			|| format[i] == 'f' || format[i] == 's')
 			printf(", ");
 	}
 	va_end(args);
