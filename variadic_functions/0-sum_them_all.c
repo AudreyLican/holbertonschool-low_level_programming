@@ -12,7 +12,6 @@ int sum_them_all(const unsigned int n, ...)
 	int sum;
 	va_list pa; /* Declaring pointer to the argument list */
 
-	sum = 0;
 	if (n == 0)
 		return (0);
 
