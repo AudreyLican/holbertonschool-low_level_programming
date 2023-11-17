@@ -12,8 +12,11 @@ void print_all(const char *const format, ...)
 
 	va_start(args, format);
 
-	if (format == NULL)
+	while (format == NULL)
+	{
+		printf("\n");
 		return;
+	}
 
 	i = 0;
 	while (format && format[i])
