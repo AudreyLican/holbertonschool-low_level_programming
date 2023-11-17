@@ -7,7 +7,7 @@
 void print_all(const char *const format, ...)
 {
 	int i;
-	char *a, *separator;
+	char *a;
 	va_list args;
 
 	va_start(args, format);
