@@ -10,24 +10,28 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t	*new;
+	list_t	*new_node;
+	unsigned int	length;
 
 	/* Creating new node and allocate memory */
-	new = (list_t *)malloc((sizeof(list_t)));
-	if (new == NULL)
+	new_node = malloc((sizeof(list_t)));
+	if (new_node == NULL)
 		return (NULL);
 
 	/* duplicate the string */
-	new->str = strdup(str);
-	if (new->str == NULL)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		free(new);
+		free(new_node);
 		return (NULL);
 	}
 
+	for (length = 0; str[length]; length++)
+	;
+	new_node->len = length;
 	/* adding the new node at the beginning of the list*/
-	new->next = *head;
-	*head = new;
+	new_node->next = *head;
+	*head = new_node;
 
-	return (new);
+	return (new_node);
 }
