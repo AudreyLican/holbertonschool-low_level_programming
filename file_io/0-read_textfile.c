@@ -2,8 +2,8 @@
 
 /**
  * read_textfile - function that reads a text file and prints it to the POSIX standard output.
- * filename : name of the file to read and print
- * letters : n number of letter to read and print
+ * @filename : name of the file to read and print
+ * @letters : n number of letter to read and print
  * 
  * Return: the file
 */
@@ -22,9 +22,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (temp == NULL)
 		return (NULL);
 	r = read(fd, temp, letters);
-	w = write(STDOUT_FILENO,temp,r);
+	w = write(STDOUT_FILENO, temp, r);
 
-	free(temp);
-	close(fd);
+	free (temp);
+	close (fd);
 	return (w);
 }
