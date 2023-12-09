@@ -9,17 +9,17 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t	*new_node, *element, *current;
+	hash_node_t	*new_node, *current;
 	unsigned long int	index;
 
-	if (!ht || !key || !*key)
+	if (!ht || !key || !*key || !value)
 		return (0);
 
 	/* Calculate the hash value */
 	index = key_index((const unsigned char *)key, ht->size);
+	current = ht->array[index];
 
 	/* Check if there is already a node with the same key */
-	current = ht->array[index];
 	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
