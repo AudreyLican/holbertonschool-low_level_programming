@@ -16,7 +16,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	/* Calculate the hash value */
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 
 	/* Check if there is already a node with the same key */
 	current = ht->array[index];
@@ -46,6 +46,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	/* Update the head of the array */
 	ht->array[index] = new_node;
-
 	return (1);
 }
