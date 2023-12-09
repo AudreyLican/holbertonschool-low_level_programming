@@ -3,7 +3,7 @@ unsigned long int hash_djb2(const unsigned char *str);
 
 /**
  * key_index - gives you the index of a key
- * @hey : pointer to the key to check the index
+ * @key : pointer to the key to check the index
  * @size : size of the array of the hash table
  *
  * Return: index where the key must be stored in the hash table
